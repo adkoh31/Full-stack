@@ -251,8 +251,6 @@ Feel free to reach out with questions:
 - Questions about InvestLearn's vision
 - Any other concerns
 
-Email: [your-email@investlearn.com]
-
 ---
 
 ## What Happens Next?
@@ -294,6 +292,6 @@ We're excited to see what you build!
 
 ---
 
-**Questions?** Email us at [your-email@investlearn.com]
+**Questions?** Email us at [investlearn@gmail.com]
 
 **Ready to start?** Pick a challenge and dive in!

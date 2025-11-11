@@ -31,7 +31,7 @@ This is a **1-2 week project** (depending on your availability) that tests:
 
 Pick **ONE** of the following challenges that interests you most. Each tests different skills:
 
-### Option 1: Multi-Tenancy System for Bank Partnerships 🔴 **HIGH PRIORITY**
+### Option 1: Multi-Tenancy System for Bank Partnerships
 
 **The Challenge:**
 We need to support multiple banks as partners, where each bank:

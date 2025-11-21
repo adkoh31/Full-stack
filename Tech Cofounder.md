@@ -69,26 +69,53 @@ This is critical for our B2B bank partnerships. We need to support multiple bank
 
 ---
 
-### Option 2: Your Own Idea 💡 **CREATIVE**
+### Option 2: Mobile App Architecture & API Design 🚀 **B2C FOCUS**
 
 **The Challenge:**
-If you have a better idea that addresses a real need for InvestLearn, propose it! 
+Design and build the architecture for a mobile app (iOS/Android) that works with InvestLearn's API. This includes offline support, push notifications, mobile-optimized data flows, and a modern mobile user experience.
 
-**Requirements:**
-- Must be a substantial feature/system (not just a small improvement)
-- Must address a real user or business need
-- Must demonstrate full-stack capabilities
-- Must include system design documentation
+**What to Build:**
+1. **API Design:**
+   - Mobile-optimized endpoints (reduced payload, efficient pagination)
+   - Offline-first data sync strategy
+   - Push notification infrastructure design
+   - Mobile authentication flow
 
-**What to Include:**
-- Problem statement (why this matters)
-- Proposed solution
-- System design
-- Implementation plan
-- How it fits into InvestLearn's vision
+2. **Mobile Architecture:**
+   - App architecture (React Native, Flutter, or native - your choice)
+   - State management strategy
+   - Offline data storage and sync
+   - Conflict resolution for offline edits
+
+3. **Prototype/Demo:**
+   - Working mobile app (or key screens demonstrating core flows)
+   - API integration with InvestLearn backend
+   - Offline functionality demo
+   - Push notification demo (if implemented)
+
+4. **Documentation:**
+   - Mobile architecture design document
+   - API design decisions and rationale
+   - Offline sync strategy
+   - Scalability considerations (how to handle 10K+ mobile users)
+   - User experience design rationale
 
 **Why This Matters:**
-We value creative thinking and initiative. If you see a problem we haven't identified, that's valuable!
+Mobile is critical for B2C growth. Users expect to access financial tools on their phones, and a great mobile experience is essential for user engagement and retention. This enables our B2C expansion and makes InvestLearn accessible to users on-the-go.
+
+**What This Tests:**
+- System architecture and API design
+- Mobile development skills
+- Offline-first thinking
+- Product and UX thinking
+- Technical leadership and decision-making
+
+**Key Features to Consider:**
+- Assessment flow (mobile-optimized questionnaire)
+- Portfolio recommendations view
+- AI chat interface
+- Spending tracking
+- Goal progress tracking
 
 ---
 
@@ -240,9 +267,8 @@ We understand you may have other commitments. The timeline is flexible - what ma
 - **Other:** Firebase Auth, OpenAI API, Redis (optional)
 
 ### Helpful Resources
-- [Our API Documentation](link-if-available)
-- [Our Database Schema](link-if-available)
-- [Architecture Overview](link-if-available)
+- [Our API Documentation], [Database Schema] and [Archictecture] are in the repository.
+
 
 ### Questions?
 Feel free to reach out with questions:

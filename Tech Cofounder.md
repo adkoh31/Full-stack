@@ -267,8 +267,7 @@ We understand you may have other commitments. The timeline is flexible - what ma
 - **Other:** Firebase Auth, OpenAI API, Redis (optional)
 
 ### Helpful Resources
-- [Our API Documentation] https://github.com/adkoh31/Full-stack/blob/0914ab5ef2abff12b30a9304dac38aa369b3be2f/Api_Endpoints.md
-, [Database Schema] and [Archictecture] are in the repository.
+- [Our API Documentation], [Database Schema] and [Archictecture] are in the repository.
 
 
 ### Questions?

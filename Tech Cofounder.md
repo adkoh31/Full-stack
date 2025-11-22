@@ -1,5 +1,7 @@
 # Tech Co-Founder Assignment - InvestLearn
 
+> **Note:** If you're just getting started, check out the [README.md](README.md) first for an overview of the role and opportunity.
+
 We're excited that you're interested in joining InvestLearn as a technical co-founder! This assignment is designed to give us both a sense of how we'd work together, your technical capabilities, and your product thinking. It's structured as a substantial project that mirrors real challenges we face building the platform.
 
 ## About InvestLearn
@@ -29,9 +31,9 @@ This is a **1-2 week project** (depending on your availability) that tests:
 
 ## Choose Your Challenge
 
-Pick **ONE** of the following challenges that interests you most. Each tests different skills:
+Pick **ONE** of the following challenges that interests you most. Each tests different skills and aligns with different parts of our business:
 
-### Option 1: Multi-Tenancy System for Bank Partnerships
+### Option 1: Multi-Tenancy System for Bank Partnerships 🔴 **B2B FOCUS**
 
 **The Challenge:**
 We need to support multiple banks as partners, where each bank:
@@ -62,10 +64,22 @@ We need to support multiple banks as partners, where each bank:
    - System architecture design
    - Database schema decisions
    - Security considerations (data isolation)
-   - Scalability considerations
+   - Scalability considerations (how to handle 100+ banks)
 
 **Why This Matters:**
-This is critical for our B2B bank partnerships. We need to support multiple banks securely and scalably.
+This is critical for our B2B bank partnerships. We need to support multiple banks securely and scalably. This enables our B2B revenue stream and allows us to serve financial institutions at scale.
+
+**What This Tests:**
+- System design and architecture
+- Security and data isolation
+- Multi-tenant patterns
+- Full-stack implementation
+- B2B product thinking
+
+**Key Resources:**
+- Review [Database Schema](Database_Schema.md) to understand user table structure
+- Use [dummy-data.sql](dummy-data.sql) to test with sample users
+- Reference [API Documentation](Api_Endpoints.md) for endpoint patterns
 
 ---
 
@@ -116,6 +130,12 @@ Mobile is critical for B2C growth. Users expect to access financial tools on the
 - AI chat interface
 - Spending tracking
 - Goal progress tracking
+
+**Key Resources:**
+- Review [API Documentation](Api_Endpoints.md) for all available endpoints
+- Use [dummy-data.json](dummy-data.json) for mock API responses
+- Reference [Sample Data](SAMPLE_DATA.md) for API response formats
+- Check [Frontend Tech Stack](Frontend_Techstack.md) for mobile patterns
 
 ---
 
@@ -188,29 +208,28 @@ We'll evaluate your submission on:
 
 ## Getting Started
 
-### Option A: Work with Our Codebase
+### Build Independently
 
-If you want to integrate with our existing codebase:
-1. Fork our repository: [Insert GitHub Repo Link]
-2. Set up the project locally (see README)
-3. Build your feature as part of the existing system
-4. Submit a PR with your changes
+**Important:** We're not sharing our codebase for this assignment. Build your solution independently.
 
-**Pros:** Shows integration skills, works with real codebase  
-**Cons:** Requires understanding existing codebase structure
-
-### Option B: Build Independently
-
-If you prefer to build independently:
-1. Create a new repository
-2. Build your feature as a standalone system
-3. Document how it would integrate with InvestLearn
+**Approach:**
+1. Create a new repository for your solution
+2. Build your feature/system as a standalone implementation
+3. Document how it would integrate with InvestLearn's existing system
 4. Submit the repository link
 
-**Pros:** More freedom, can use your preferred stack  
-**Cons:** Need to explain integration approach
+**Why This Approach:**
+- Tests your ability to work independently
+- Shows your system design thinking
+- Allows you to use your preferred stack
+- Focuses on architecture and implementation, not codebase navigation
 
-**We recommend Option A** if you're comfortable with our stack (Node.js/TypeScript/PostgreSQL), but **Option B is fine** if you prefer a different stack and can explain how it would integrate.
+**Integration Documentation:**
+Your solution should include clear documentation on:
+- How it integrates with InvestLearn's API (for Option 2)
+- How it integrates with InvestLearn's database schema (for Option 1)
+- API contracts and data flows
+- Authentication and security considerations
 
 ---
 
@@ -239,7 +258,7 @@ Please submit:
    - Explain key design decisions
    - Discuss trade-offs and alternatives considered
 
-4. **Email Submission** to [investlearnco@gmail.com] with:
+4. **Email Submission** to **investlearnco@gmail.com** with:
    - Subject: "Tech Co-Founder Assignment Submission - [Your Name]"
    - Link to GitHub repository
    - Link to deployed version (if applicable)
@@ -267,8 +286,44 @@ We understand you may have other commitments. The timeline is flexible - what ma
 - **Other:** Firebase Auth, OpenAI API, Redis (optional)
 
 ### Helpful Resources
-- [Our API Documentation], [Database Schema] and [Archictecture] are in the repository.
 
+We've prepared comprehensive documentation to help you understand our system. All documents are sanitized and contain no sensitive information (no API keys, credentials, or production data).
+
+**📚 All Available Documentation:**
+
+#### Core Documentation
+- **[Database Schema](Database_Schema.md)** - Complete database structure with all tables, relationships, and data types
+- **[API Documentation](Api_Endpoints.md)** - Full API reference with all endpoints, request/response formats, and authentication
+- **[Backend Tech Stack](Backend_Techstack.md)** - Technology stack, architecture patterns, and design decisions
+- **[Frontend Tech Stack](Frontend_Techstack.md)** - Frontend patterns and integration approaches
+
+#### Sample Data & Testing
+- **[Sample Data](SAMPLE_DATA.md)** - Documentation explaining data structures with examples
+- **[dummy-data.sql](dummy-data.sql)** - Ready-to-use SQL file with INSERT statements (import directly into PostgreSQL)
+- **[dummy-data.json](dummy-data.json)** - Ready-to-use JSON file with sample API responses (use for testing/mocking)
+
+**📋 Recommended Reading by Option:**
+
+**For Option 1 (Multi-Tenancy):**
+1. ✅ **[Database Schema](Database_Schema.md)** - Essential: Understand user table structure and relationships
+2. ✅ **[dummy-data.sql](dummy-data.sql)** - Essential: Test your implementation with real data
+3. ⚠️ **[API Documentation](Api_Endpoints.md)** - Helpful: Understand endpoint patterns for organization-scoped APIs
+4. ⚠️ **[Sample Data](SAMPLE_DATA.md)** - Helpful: See example user records and data structures
+5. ⚠️ **[Backend Tech Stack](Backend_Techstack.md)** - Optional: Understand our current stack (you can use your own)
+
+**For Option 2 (Mobile App):**
+1. ✅ **[API Documentation](Api_Endpoints.md)** - Essential: All endpoints you need for mobile integration
+2. ✅ **[dummy-data.json](dummy-data.json)** - Essential: Mock API responses for development
+3. ✅ **[Sample Data](SAMPLE_DATA.md)** - Essential: Understand API response formats and data structures
+4. ⚠️ **[Database Schema](Database_Schema.md)** - Helpful: Understand data model (optional)
+5. ⚠️ **[Frontend Tech Stack](Frontend_Techstack.md)** - Optional: See our frontend patterns (you can use your own)
+6. ⚠️ **[Backend Tech Stack](Backend_Techstack.md)** - Optional: Understand backend architecture (optional)
+
+**💡 Quick Tips:**
+- Start with the essential docs for your chosen option
+- Use the dummy data files to save time (no need to manually create test data)
+- The optional docs are there if you want to understand our patterns, but you're free to design your own approach
+- All documentation is in this repository - just click the links above
 
 ### Questions?
 Feel free to reach out with questions:
@@ -276,6 +331,8 @@ Feel free to reach out with questions:
 - Clarifications on requirements
 - Questions about InvestLearn's vision
 - Any other concerns
+
+Email: investlearnco@gmail.com
 
 ---
 
@@ -318,6 +375,7 @@ We're excited to see what you build!
 
 ---
 
-**Questions?** Email us at [investlearnco@gmail.com]
+**Questions?** Email us at **investlearnco@gmail.com**
 
 **Ready to start?** Pick a challenge and dive in!
+
